@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bd051af889c25e942971838f44d07c70
+labels:
+- PlayerPrefs
+- SecurePlayerPrefs
+- Security
+- Encryption
+- Decryption
+timeCreated: 1429559620
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8514d63b11afe7d4c97cd9b8c481602f
+labels:
+- PlayerPrefs
+- SecurePlayerPrefs
+- Security
+- Encryption
+- Decryption
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

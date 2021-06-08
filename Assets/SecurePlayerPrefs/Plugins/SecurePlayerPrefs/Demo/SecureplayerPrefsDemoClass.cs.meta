@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2a99408f861c22c48af669d768f07cd8
+labels:
+- PlayerPrefs
+- SecurePlayerPrefs
+- Security
+- Encryption
+- Decryption
+timeCreated: 1429558534
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

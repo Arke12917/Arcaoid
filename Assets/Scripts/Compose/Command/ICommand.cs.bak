@@ -1,0 +1,20 @@
+﻿using System;
+using System.IO;
+using System.Text;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace Arcaoid.Compose.Command
+{
+    public interface ICommand
+    {
+        string Name
+        {
+            get;
+        }
+        void Do();
+        void Undo();
+    }
+}

@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - TapNoteManager
+  - TimingManager
+  - HoldNoteManager
+  - ArcManager
+  - EditorManagers
+  - NOTEBODY
+  - TapNote
+  - ArcTap
+  - HoldNote
+  - CRITLINE
+  - ATAP
+  - ARCTAPPOOL
+  - SEGMENT
+  - ARC
+  - TITLESONG
+  - SHUTTERMNG
+  - FTR
+  - SHUTTER
+  - SHUTTERSNG
+  - LDMENU
+  - ARCHIT
+  - FACTIV
+  - CAP
+  - CONNECTION
+  - ArcaeaNote
+  - CONSTBOX
+  - HILD0
+  - HILD1
+  - HILD2
+  - HILD3
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PostProcessing
+  - ArcaoidGameplay
+  - ArcaoidEditor
+  - ArcaoidComposing
+  - Arcaoidlines
+  - actlayer
+  - arctaps
+  - HOLDS
+  - notehold
+  - ArcCaps
+  - ARCS
+  - no-interact
+  - HITAREA
+  - TAPS
+  - TRACk
+  - unseen
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Track
+    uniqueID: 2829105111
+    locked: 0
+  - name: holdynote
+    uniqueID: 1586960233
+    locked: 0
+  - name: TRACKSP
+    uniqueID: 869224001
+    locked: 0
+  - name: Note
+    uniqueID: 847068993
+    locked: 0
+  - name: Arc
+    uniqueID: 1689115309
+    locked: 0
+  - name: Effect
+    uniqueID: 3236498083
+    locked: 0
+  - name: UI
+    uniqueID: 3169236845
+    locked: 0
+  - name: EditorUI
+    uniqueID: 867310387
+    locked: 0

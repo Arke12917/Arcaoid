@@ -1,0 +1,260 @@
+version 1.54
+
+- buffer2File fix. (was adding modified time field when it was not needed.)
+
+- Added Linux glibc 2.17 version plugins (useful for StemOS).
+
+
+version 1.53
+
+- Fixed some preprocessor directives.
+
+
+version 1.52
+
+- Added the ability to create split zip archives.
+- Fixed an issue with the iOS bitcode enabled plugin.
+
+
+version 1.51
+
+- Addded arm64-v8a Android plugin.
+- Resolved some il2cpp issues.
+- Unicode filenames should work now on Windows.
+- Removed WSA support.
+- MacOS plugin compiled only as 64 bit now.
+- decompress of split zip archives in the form of 1.zip, 1.z01, 1.z02, ...
+
+version 1.49
+
+- Hotfix for password encoded zip files not creating folders.
+- Hotfix for the compressDir function.
+
+
+version 1.47
+
+- Added the entry2FixedBuffer function to decompress an entry to a fixed size buffer.
+
+- The getFileInfo is now much faster on zip archives with thousands of files.
+
+
+version 1.46
+
+- Added the getEntryDateTime function, to get DateTime for a specific entry
+
+- Updated the file sample links of the demos, due to a server switch.
+
+
+version 1.45
+
+- Disabled encryption/decryption for WSA due to certification reasons.
+
+
+version 1.44.2
+
+- iOS/MacOS Hotfix.
+
+- bz2 method removed for MacOS/iOS/watchOS/tvOS because it is not working correctly.
+
+
+version 1.44.1
+
+- The -lz linking flag should be added for iOS/watchOS/tvOS on xcode.
+
+
+
+version 1.44
+
+- Added Encryption/Decryption support.
+
+- Added bz2 as an alternative compression/decompression method of zip archives.
+
+- WSA supports now FileBuffers.
+
+- On WSA encryption is supported only on UWP10 x64.
+
+- Better Unicode support on Windows platforms.
+
+- Faster and more reliable getInfo function. (intermediate file is not used anymore.)
+
+- Low level functions have been removed due to inconsistency between platforms.
+
+- Added the ability to compress a list of files into a single archive.
+
+
+
+version 1.43
+
+- Reintroduced WebGL support for compression/decompression of zlib/gzip buffers.
+
+
+
+version 1.42
+
+- hotfix for zip files which use backslashes instead of slashes for directories
+
+- Linux/MacOS fixes for the low level functions on standalone builds.
+
+- ios: watchOS & tvOS. Added simulator plugins.
+
+
+
+version 1.41
+
+- Added zip64 support.
+
+- Added low level functions (except for WSA) - see demo and lzip.cs.
+
+- WSA8.1 fixes.
+
+- Added a setEncoding function for Windows and WSA10 to set text encoding on file names.
+
+- Added a validate function to check sanity of zip files.
+
+- Removed WebGL support since it is almost impossible to work on Unity5.5.
+
+- The getTotalFiles will now return only the true files number (no folders and no zero byte files).
+
+
+
+version 1.4
+
+- changed link for demo project
+
+version 1.39
+
+- fix for a WSA/x86/il2cpp crash.
+
+
+version 1.38
+
+All platforms: added the delete_entry function to delete an entry in a zip file.
+All platforms: added the replace_entry function to replace an entry in a zip file(from a filepath or a buffer).
+
+
+version 1.37
+
+iOS/zip/bitcode: removed older version of bitcode compiled lib which was missing the new ungzip function.
+
+
+version 1.36
+
+Windows: A small fix to the getTotalFiles function to allow to work correctly with FileBuffers
+
+
+version 1.35
+
+All Platforms: Fixed a bug that was introduced in a previous update that had to with the outbuffer length. Now the gzip functions behave as intended.
+
+Windows: Now you can treat a zip file that is loaded in a byte buffer as a file.
+
+ios/gzip: updated the gzip functions.
+
+
+
+version 1.34
+
+Linux: fixed preprocessor directives for Unity5.4.x and up.
+
+
+version 1.33
+
+gzip: Fixed Android issues and added a 2nd ungzip function.
+
+
+version 1.32
+
+zip/Windows: better unicode support. Unity5.4 compatibility fix.
+
+
+version 1.31
+
+iOS: hotfix to fix a GcHandle crash.
+
+
+version 1.3
+
+- added gzip support. Can operate on buffers with or without headers/footers.
+
+- added progress for individual file decompression.
+
+- Android, Linux, iOS, MacOSX got chmod support to set file permissions.
+
+- iOS: made the plugins much smaller in size.
+
+
+version 1.28
+
+- Added bitcode supported plugins for iOS
+
+version 1.27
+
+- Compatibility fixes for Windows Phone 8.1 and WSA8.1. Should work out of the box now.
+
+
+version 1.26
+
+- Winx86, Winx86_64 & WSA plugins: full unicode support on paths and filenames. Was problematic before.
+
+
+version 1.25
+
+- Better unicode support on windows directories
+
+version 1.24
+
+- progress functions are the same on all platforms now. That introduced a small breaking code change.
+  Instead of providing a referenced integer or float you provide a single item integer of float array.
+  Removed deprecated iOS functions to get progress.
+
+- iOS: renamed some native functions to avoid collision with unity's libiphone lib.
+
+- all platforms: fixed an issue with decompressing of zip files conataining the '__MACOSX' folder.
+  The '__MACOSX' folder will be ignored along with files starting with '._' and files with 0 bytes size.
+
+
+
+version 1.2
+
+- Added WebGL support.
+
+- Linux, iOS, Android, MacOSX can treat now buffers as files. That means if you have a file in www.bytes  you can perform operations directly on the buffer.
+  For Android this is very useful since you can decompress from Streaming Assets without copying to  Persistent data path.
+
+- all platforms: added support for fixed buffer operations to avoid memory allocations.
+
+- refactored the preprocessor directives to comply with Unity 5.3.
+
+- iOS: simulator plugin has now universal, i386 and x86_64 variations.
+
+- Thread safe corrections.
+
+
+version 1.1
+
+iOS: added tvOS, watchOS and simulator plugins.
+
+Unity5.2: added WSA SDK10 NetCore support. That means even XboxOne is supported.
+
+(Delete the old Metro plugins folder, since it is replaced with a diferent naming scheme.)
+
+
+version 1.05
+
+-corrected misbehavior of the compressDir functions on some operating systems.
+
+version 1.04
+
+- iOS : updated the ios plugins to have minimum iOS support 6.0
+
+
+version 1.03
+
+- removed vc++2013 dependency for windows editor.
+
+- iOS: added extra workaroud functions to get the progress of files when extracting multiple files in multiple threads. See documentation!
+
+version 1.02
+
+- fixed a bug in the CompressDir function, where a dir with no subdirs would not get compressed.
+
